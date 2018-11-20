@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多重边框</title>
+    <!-- box-shadow, outline,outline-offset-->
+    <style>
+        /*多边框的*/
+        main>div:nth-child(1){
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-top: 100px;
+            margin-left: 100px;
+            background: #fafafa;
+            box-shadow: 0 0 0 10px #E8E2D6,0 0 0 20px #E1D9C9,
+            0 0 0 30px #D9CFBB, 0 0 0 40px #D2C6AE,
+            0 0 0 50px #CABCA0, 0 0 0 60px #C3B393,
+            0 0 0 70px #BBA985, 0 0 0 80px #B4A078,
+            0 0 0 90px #000, 0 0 0 100px #f00;
+        }
+
+        main>div:nth-child(2){
+            width: 200px;
+            height: 120px;
+            background: #efebe9;
+            border: 5px solid #B4A078;
+            margin-top: 180px;
+            outline: #B4A078 dashed 1px;
+            /*设置内边框的偏移*/
+            outline-offset: -10px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div></div>
+    <div></div>
+</main>
+</body>
+</html>
